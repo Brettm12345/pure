@@ -1,5 +1,4 @@
-# source $DIRNAME/../functions/_pure_format_time.fish
-source $DIRNAME/../functions/__pure_command_duration_prompt.fish
+source $DIRNAME/../functions/format_time.fish
 
 set --local THRESHOLD 0 # in seconds
 set --local EMPTY ''

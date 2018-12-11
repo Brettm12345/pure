@@ -1,6 +1,6 @@
 set FAIL 1
 
-function _pure_format_time --description="Format milliseconds to a human readable format"
+function _pure_format_time -d "Format milliseconds to a human readable format"
     set --local milliseconds $argv[1]
     if test $milliseconds -lt 0; return $FAIL; end
 
@@ -12,20 +12,20 @@ function _pure_format_time --description="Format milliseconds to a human readabl
     set --local threshold $argv[2]
 
     if test $days -gt 0
-        set time (printf "$time%sd " $days)
+        set time $time (printf "%sd" $days)
     end
 
     if test $hours -gt 0
-        set time (printf "$time%sh " $hours)
+        set time $time (printf "%sh" $hours)
     end
 
     if test $minutes -gt 0
-        set time (printf "$time%sm " $minutes)
+        set time $time (printf "%sm" $minutes)
     end
 
     if test $seconds -gt $threshold
-        set time (printf "$time%ss " $seconds)
+        set time $time (printf "%ss" $seconds)
     end
 
-    echo -e $time
+    echo -e (string join ' ' $time)
 end
