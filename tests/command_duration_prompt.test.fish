@@ -1,4 +1,4 @@
-source $DIRNAME/../functions/__pure_command_duration_prompt.fish
+source $DIRNAME/../functions/command_duration_prompt.fish
 
 set --local EMPTY ''
 
