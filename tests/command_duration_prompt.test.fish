@@ -4,7 +4,7 @@ set --local EMPTY ''
 
 test "hide command duration when it's zero"
     (
-        set --local CMD_DURATION $EMPTY
+        set CMD_DURATION $EMPTY
         set pure_color_yellow $EMPTY
 
         __pure_command_duration_prompt
