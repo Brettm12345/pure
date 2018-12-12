@@ -14,13 +14,15 @@ set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
 __pure_set_default pure_symbol_prompt "❯"
 __pure_set_default pure_symbol_git_down_arrow "⇣"
 __pure_set_default pure_symbol_git_up_arrow "⇡"
-__pure_set_default pure_symbol_git_dirty "*"
+__pure_set_default pure_symbol_git_dirty "×"
+__pure_set_default pure_symbol_git_clean "•"
 __pure_set_default pure_symbol_horizontal_bar "—"
 
 # Colors
 
 __pure_set_default pure_color_red (set_color red)
 __pure_set_default pure_color_green (set_color green)
+__pure_set_default pure_color_magenta (set_color magenta)
 __pure_set_default pure_color_blue (set_color blue)
 __pure_set_default pure_color_yellow (set_color yellow)
 __pure_set_default pure_color_cyan (set_color cyan)

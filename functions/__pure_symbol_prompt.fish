@@ -1,7 +1,7 @@
 function __pure_symbol_prompt
     set --local pure_symbol $pure_symbol_prompt
 
-    set --local color_symbol $pure_color_green # default pure symbol color
+    set --local color_symbol $pure_color_magenta # default pure symbol color
     if test $argv[1] -ne 0
         # Symbol color is red when previous command fails
         set color_symbol $pure_color_red
